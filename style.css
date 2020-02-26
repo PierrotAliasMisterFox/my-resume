@@ -1,0 +1,47 @@
+@font-face
+{
+    font-family: "LiberationSans-Regular";
+    src: url("./assets/fonts/liberation_sans/LiberationSans-Regular.ttf");
+}
+body
+{
+    background-color: rgb(250,251,249);
+    width: 975px;
+    box-align : center;
+    display : flex;
+}
+p
+{
+    font-size : 0.9em;
+    line-height: 100%;
+}
+h3
+{
+    border-bottom: thick solid ;
+    width: 600px;
+}
+a:hover
+{
+    color:rgb(224, 45, 75);
+}
+.cv
+{
+    font-family: LiberationSans-Regular, Arial, "sans-serif";
+    color:black;
+}
+.blocPhoto
+{
+    float: right;
+}
+.coordonnees
+{
+    font-size : 1.2em;
+}
+.interdiv
+{
+    line-height: 5%;
+}
+.main
+{
+    margin-right: 50px;
+}
