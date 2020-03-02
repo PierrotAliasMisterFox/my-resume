@@ -1,14 +1,11 @@
-@font-face
-{
-    font-family: 'Trade Winds';
-    /*src: url("./assets/fonts/liberation_sans/LiberationSans-Regular.ttf");*/
-}
+
 body
 {
     background-color: rgb(250,251,249);
     width: 975px;
     box-align : center;
     display : flex;
+    font-family: 'Helvetica', 'LiberationSans-Regular', 'Arial', 'sans-serif';
 }
 p
 {
@@ -26,7 +23,6 @@ a:hover
 }
 .cv
 {
-    font-family: LiberationSans-Regular, Arial, "sans-serif";
     color:black;
 }
 .blocPhoto
