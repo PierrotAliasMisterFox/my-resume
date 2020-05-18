@@ -143,6 +143,10 @@ section:last-child {
 	padding: 20px 0 10px;
 }
 
+p.subDetails
+{
+	margin-bottom : 10px;
+}
 .sectionTitle {
 	float: left;
 	width: 19%;
@@ -275,8 +279,56 @@ section:last-child {
 
 @media print {
     #cv {
-        width: 100%;
-    }
+		width: 100%;
+		margin-top: 0px;
+	}
+	.sectionTitle, .sectionContent {
+		float: none;
+		width: 100%;
+	}
+	p
+	{
+		margin-bottom : 0.75em;
+		font-size: 0.8em;
+		line-height: 1.1em;
+		color: black;
+		margin-left: 0px;
+	}
+	p.subDetails
+	{
+		margin-bottom : 8px;
+	}
+	section
+	{
+		padding: 8px 0 0;
+	}
+	section:last-child 
+	{
+		padding: 8px 0 0;
+	}
+	.sectionTitle h1
+	{
+		font-size: 1.3em;
+		color : #8f5f03;
+		margin-bottom: 4px;
+	
+	}
+	.sectionContent h2 
+	{
+		font-size : 1.3em;
+		font-weight: 400;
+	}
+
+	#headshot {
+		width: 12%;
+		float: left;
+		margin-right: 35px;
+		height: inherit;
+	}
+	.mainDetails
+	{
+		height: 110px;
+	}
 }
 
 @-webkit-keyframes reset {
