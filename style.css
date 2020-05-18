@@ -48,15 +48,15 @@ p {
 }
 
 #name h1 {
-	font-size: 2.2em;
+	font-size: 2.0em;
 	font-weight: 650;
 	/*font-family: 'Rokkitt', Helvetica, Arial, sans-serif;*/
-	margin-bottom: -6px;
+	margin-bottom: -2px;
 	margin-left: 0px;
 }
 
 #name h2 {
-	font-size: 1.8em;
+	font-size: 1.7em;
 	margin-left: 0px;
 	/*font-family: 'Rokkitt', Helvetica, Arial, sans-serif;*/
 }
@@ -146,6 +146,7 @@ section:last-child {
 .sectionTitle {
 	float: left;
 	width: 19%;
+	min-width: 100px;
 }
 
 .sectionContent {
@@ -189,7 +190,7 @@ section:last-child {
 .SmallDescr
 {
 	font-size:0.85em;
-	white-space:nowrap;
+	/*white-space:nowrap;*/
 }
 
 .language p
@@ -200,7 +201,7 @@ section:last-child {
 {
 	column-count: 2;
 }
-@media all and (min-width: 602px) and (max-width: 800px) {
+@media all and (min-width: 692px) and (max-width: 800px) {
 	#headshot {
 		display: none;
 	}
@@ -212,10 +213,10 @@ section:last-child {
 	}
 }
 
-@media all and (max-width: 601px) {
+@media all and (max-width: 691px) {
 	#cv {
-		width: 100%;
-		margin: 10px 10px;
+		width: 95%;
+		margin: 10px auto;
 		min-width: 280px;
 	}
 	
