@@ -167,7 +167,7 @@ p.subDetails
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	margin-bottom: -2px;
 }
 
@@ -204,6 +204,7 @@ p.subDetails
 .informatique
 {
 	column-count: 2;
+	margin-bottom: 10px;
 }
 @media all and (min-width: 692px) and (max-width: 800px) {
 	#headshot {
@@ -281,6 +282,8 @@ p.subDetails
     #cv {
 		width: 100%;
 		margin-top: 0px;
+		margin-left: 20px;
+		margin-right: 100px;
 	}
 	.sectionTitle, .sectionContent {
 		float: none;
@@ -293,6 +296,7 @@ p.subDetails
 		line-height: 1.1em;
 		color: black;
 		margin-left: 0px;
+		margin-right: 10px;
 	}
 	p.subDetails
 	{
@@ -300,11 +304,11 @@ p.subDetails
 	}
 	section
 	{
-		padding: 8px 0 0;
+		padding: 14px 0 5px;
 	}
 	section:last-child 
 	{
-		padding: 8px 0 0;
+		padding: 14px 0 0;
 	}
 	.sectionTitle h1
 	{
@@ -328,6 +332,10 @@ p.subDetails
 	.mainDetails
 	{
 		height: 110px;
+	}
+
+	#mainArea {
+		padding: 0 0px;
 	}
 }
 
