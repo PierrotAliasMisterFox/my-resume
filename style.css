@@ -20,9 +20,11 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 .clear {clear: both;}
 
 p {
-	font-size: 0.9em;
+	font-size: 0.95em;
 	line-height: 1.25em;
-	margin-bottom: 20px;
+	margin-top : 0px;
+	margin-bottom: 15px;
+	margin-right: 15px;
 	color: #444;
 }
 
@@ -171,41 +173,52 @@ p.subDetails
 	margin-bottom: -2px;
 }
 
-.subDetails {
+p.subDetails {
 	font-size: 0.8em;
 	font-style: italic;
-	margin-bottom: 3px;
+	margin-bottom: 8px;
 }
 
-.keySkills {
-	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
-	margin-bottom: 20px;
-	font-size: 1em;
+.keySkills ul li 
+{
+	margin-bottom: 3px;
+	font-size: 0.9em;
+	line-height: 1.25em;
 	color: #444;
-}
+}	
 
-.keySkills ul li {
-	margin-bottom: 3px;
+.keySkills li: :last-child
+{
+	margin-bottom : 0px;
 }
 
 .SmallDescr
 {
-	font-size:0.85em;
+	font-size:0.7em;
 	/*white-space:nowrap;*/
 }
 
-.language p
+.keySkills ul
 {
-	margin-bottom : 0.5em;
+	list-style-type: none;
 }
 .informatique
 {
-	column-count: 2;
+	column-count: 3;
 	margin-bottom: 10px;
+	list-style-type: none;
 }
+.language
+{
+	column-count: 1;
+	margin-bottom : 10px;
+	list-style-type: none;
+}
+.onlyPrint
+{
+	display: none !important;
+}
+
 @media all and (min-width: 692px) and (max-width: 800px) {
 	#headshot {
 		display: none;
@@ -282,7 +295,7 @@ p.subDetails
     #cv {
 		width: 97%;
 		margin-top: 0px;
-		margin-left: 30px;
+		margin-left: 35px;
 		margin-bottom : 0px;
 		/*margin-right: 10px;*/
 	}
@@ -292,24 +305,39 @@ p.subDetails
 	}
 	p
 	{
-		margin-bottom : 0.95em;
-		font-size: 0.8em;
+		margin-bottom : 0.75em;
+		font-size: 0.825em;
 		line-height: 1.2em;
 		color: black;
 		margin-left: 0px;
 		margin-right: 10px;
 	}
+
 	p.subDetails
 	{
-		margin-bottom : 8px;
+		margin-bottom: 15px;
+	}
+	.formation p.subDetails
+	{
+		margin-bottom : 5px;
+	}
+	article
+	{
+		margin-bottom : 12px;
 	}
 	section
 	{
-		padding: 11px 0 2px 0;
+		padding: 11px 0 0px 0;
 	}
 	section:last-child 
 	{
-		padding: 11px 0 0;
+		padding: 11px 0 0 0;
+		margin-bottom: 0px;
+	}
+	section.language
+	{
+		padding-bottom: 0px;
+		margin-bottom : 0px;
 	}
 	.sectionTitle h1
 	{
@@ -332,13 +360,34 @@ p.subDetails
 	}
 	.mainDetails
 	{
-		height: 110px;
+		height: 100px;
 		margin-bottom : 5px;
-		margin-top : 5px;
+		margin-top : 0px;
 	}
 
 	#mainArea {
 		padding: 0 0px;
+	}
+
+	.formation
+	{
+		column-count: 2;
+		column-fill: auto;
+		height: 150px;
+	}
+
+	.school
+	{
+		column-span: all;
+	}
+
+	.onlyPrint
+	{
+	display: inline !important;
+	}
+	.hiddenPrint
+	{
+	display: none !important;
 	}
 }
 
