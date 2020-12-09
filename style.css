@@ -221,7 +221,7 @@ p.subDetails {
 
 @media all and (min-width: 692px) and (max-width: 800px) {
 	#headshot {
-		display: none;
+		/*display: none;*/
 	}
 	
 	.keySkills {
@@ -297,7 +297,7 @@ p.subDetails {
 		margin-top: 0px;
 		margin-left: 35px;
 		margin-bottom : 0px;
-		/*margin-right: 10px;*/
+		margin-right: 10px;
 	}
 	.sectionTitle, .sectionContent {
 		float: none;
@@ -327,7 +327,7 @@ p.subDetails {
 	}
 	section
 	{
-		padding: 11px 0 0px 0;
+		padding: 13px 13px 0px 0;
 	}
 	section:last-child 
 	{
@@ -360,7 +360,7 @@ p.subDetails {
 	}
 	.mainDetails
 	{
-		height: 100px;
+		height: 120px;
 		margin-bottom : 5px;
 		margin-top : 0px;
 	}
