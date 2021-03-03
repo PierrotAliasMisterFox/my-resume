@@ -244,7 +244,7 @@ p.subDetails {
 }
 
 
-
+/* Comment the 3 next @media before printing html page */
 	@media all and (min-width: 692px) and (max-width: 800px) {
 		#headshot {
 			display: none;
