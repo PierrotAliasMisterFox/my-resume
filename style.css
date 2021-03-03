@@ -89,13 +89,19 @@ p {
 	 justify-content: space-between;
 }
 
+#address {
+	font-size: 0.8em;
+	margin-top : 8px;
+}
+
 #setLanguage ul {
 	list-style-type: none;
 }
 
 #setLanguage ul li {
 	display : inline;
-	margin-right: 10px;
+	margin-right: 10px;	
+	font-size: 0.9em ;
 }
 
 .greyLink{
@@ -237,77 +243,89 @@ p.subDetails {
 	display: none !important;
 }
 
-@media all and (min-width: 692px) and (max-width: 800px) {
-	#headshot {
-		display: none;
-	}
-	
-	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
-	}
-}
 
-@media all and (max-width: 691px)  {
-	#cv {
-		width: 95%;
-		margin: 10px auto;
-		min-width: 280px;
-	}
-	
-	#headshot {
-		display: none;
-	}
-	
-	#name, #contactDetails {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	
-	.sectionTitle, .sectionContent {
-		float: none;
-		width: 100%;
-	}
-	
-	.sectionTitle {
-		margin-left: -2px;
-		font-size: 1.25em;
-	}
-	
-	.keySkills {
+/* Comment the 3 next @media before printing html page */
+	@media all and (min-width: 692px) and (max-width: 800px) {
+		#headshot {
+			display: none;
+		}
+		
+		.keySkills {
 		-moz-column-count:2;
 		-webkit-column-count:2;
 		column-count:2;
-	}
-}
-
-@media all and (max-width: 480px) {
-	.mainDetails {
-		padding: 15px 15px;
-	}
-	
-	section {
-		padding: 15px 0 0;
-	}
-	
-	#mainArea {
-		padding: 0 25px;
+		}
 	}
 
-	
-	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
+	@media all and (max-width: 691px)  {
+		#cv {
+			width: 95%;
+			margin: 10px auto;
+			min-width: 280px;
+		}
+		
+		#headshot {
+			display: none;
+		}
+		
+		#name, #contactDetails, #address {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
+
+		#setLanguage {
+			position :absolute;
+			right : 15px;
+		}
+
+		#setLanguage ul li {
+			display :list-item;
+			margin-bottom: 4px;
+		}
+		
+		.sectionTitle, .sectionContent {
+			float: none;
+			width: 100%;
+		}
+		
+		.sectionTitle {
+			margin-left: -2px;
+			font-size: 1.25em;
+		}
+		
+		.keySkills {
+			-moz-column-count:2;
+			-webkit-column-count:2;
+			column-count:2;
+		}
 	}
-	
-	#name h1 {
-		line-height: .8em;
-		margin-bottom: 4px;
+
+	@media all and (max-width: 480px) {
+		.mainDetails {
+			padding: 15px 15px;
+		}
+		
+		section {
+			padding: 15px 0 0;
+		}
+		
+		#mainArea {
+			padding: 0 25px;
+		}
+
+		
+		.keySkills {
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		column-count:1;
+		}
+		
+		#name h1 {
+			line-height: .8em;
+			margin-bottom: 4px;
+		}
 	}
-}
 
 @media print {
     #cv {
@@ -371,7 +389,7 @@ p.subDetails {
 	}
 
 	#headshot {
-		width: 12%;
+		width: 14%;
 		float: left;
 		margin-right: 35px;
 		height: inherit;
