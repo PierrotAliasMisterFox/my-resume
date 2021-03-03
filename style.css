@@ -90,8 +90,8 @@ p {
 }
 
 #address {
-	font-size: 0.8em;
-	margin-top : 8px;
+	font-size: 0.95em;
+	margin-top : 2px;
 }
 
 #setLanguage ul {
@@ -330,7 +330,9 @@ p.subDetails {
 		right : 10px;
 		top : 50px;
 	}
-	
+	#address {
+		font-size: 0.85em;
+	}
 }
 
 @media print {
